@@ -1,5 +1,5 @@
 # commentshow 
-
+<p>This project follows a feature driven development design and is powered by fastapi and mongodb as database</p>
 
 ## To set up poetry
 ### only if poetry is not installed

@@ -7,7 +7,8 @@ class Comment(BaseModel):
     user_id: str
     date_created: datetime # example 2032-04-23T10:20:30.400+02:30
     username: str
-    reply_count: int  # TODO ensure it is >= 0
+    reply_count: int  # TODO ensure it  >= 0
+    
     @field_validator('content')
     def name_must_contain_space(cls, v):
         if len(v) > 300:
