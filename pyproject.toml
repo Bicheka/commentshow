@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.12"
 fastapi = {extras = ["standard"], version = "^0.112.0"}
 motor = "^3.5.1"
+cryptography = "^43.0.0"
 
 
 [build-system]

@@ -7,9 +7,7 @@ ATLAS_USERNAME = os.environ.get("MONGO_ATLAS_USERNAME")
 
 MONGO_URI = "mongodb://localhost:27017/showcomment_db"
 DATABASE_NAME = "showcomment_db"
-COMMENT_COLLECTION = "comment"  # Update with your collection name
 
 # MongoDB connection setup
 client = AsyncIOMotorClient(MONGO_URI)
 db = client[DATABASE_NAME]
-collection = db[COMMENT_COLLECTION]
