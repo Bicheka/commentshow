@@ -2,12 +2,12 @@ from fastapi import FastAPI
 from src.user.routes import router
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
-from src.config.database import ping_server
+from src.config.database import startup_event
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Code to run before the app starts
-    await ping_server()
+    await startup_event()
     yield
     # Code to run after the app shuts down
     await some_async_function_after()
