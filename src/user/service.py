@@ -1,4 +1,4 @@
-from config import database
+from src.config import database
 from fastapi import HTTPException, status
 from .model import User
 from .encryption import encrypt_password

@@ -16,7 +16,7 @@ db = client[DATABASE_NAME]
 
 async def ping_server():
   # Replace the placeholder with your Atlas connection string
-  uri = "<connection string>"
+  uri = "mongodb://localhost:27017"
   # Set the Stable API version when creating a new client
   client = AsyncIOMotorClient(uri, server_api=ServerApi('1'))
   # Send a ping to confirm a successful connection
