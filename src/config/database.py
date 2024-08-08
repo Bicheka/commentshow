@@ -9,7 +9,6 @@ DATABASE_NAME = "commentshow_db"
 # MongoDB connection setup
 client = AsyncIOMotorClient(MONGO_URI, server_api=ServerApi('1'))
 db = client[DATABASE_NAME]
-connection_status = {"connected": True}
 
 # this function is going to be called by the lifespan function to run when the app launches
 async def startup_event():
@@ -28,8 +27,3 @@ async def ping_server():
         print("Database is up and running")
     except ConnectionFailure as e: 
         raise print(e)
-
-async def simultaneous_function():
-    while True:
-        print("this is running too!")
-        await asyncio.sleep(1)
