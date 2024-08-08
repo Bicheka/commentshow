@@ -7,6 +7,7 @@ from src.config.database import startup_event
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Code to run before the app starts
+    print("application starting...")
     await startup_event()
     yield
     # Code to run after the app shuts down
