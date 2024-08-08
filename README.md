@@ -1,7 +1,7 @@
 # commentshow
 <p>Commentshow is meant to be a hub to share comments about shows</p>
-## Stack
 
+## Stack
 <p>This project follows a feature driven development design</p>
 <p>Powered by FastApi as backend framework and MongoDB as database</p>
 
