@@ -1,4 +1,5 @@
-# commentshow
+# Comment_show
+## Sharing honest thoughts about shows and movies
 <p>Commentshow is meant to be a hub to share comments about shows</p>
 
 ## Stack
