@@ -6,6 +6,8 @@ from .encryption import encrypt_password
 USER_COLLECTION = "user"
 collection = database.db[USER_COLLECTION]
 
+# TODO improve auth method
+
 async def create_user(user: User):
     print(database.client.address)
     # Check if the user already exists
