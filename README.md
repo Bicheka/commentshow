@@ -1,5 +1,5 @@
 # commentshow
-<p>Commentshow is meant to be a hub to share comments about shows</p>
+<p>Commentshow is meant to be a hub to share comments about shows and movies</p>
 
 ## Stack
 <p>This project follows a feature driven development design</p>
